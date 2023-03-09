@@ -1,0 +1,35 @@
+{
+    "WindowSize": [500, 500],
+
+    "Detector": {
+        "Position": [0.0, 0.0, 48.38921, "cm"],        
+        "UpVector": [-1, 0, 0],
+        "NumberOfPixels": [3192, 2296],
+        "Size": [405.384, 291.592, "mm"],
+        "Energy response": {
+            "File": "energyResponseDetector.txt",
+            "Energy": "MeV"
+        }
+    },
+
+    "Source": {
+        "Position": [0.0, 0.0, -48.78439, "cm"],
+        "Shape": "PointSource",
+        "Beam": {
+            "kvp": 60,
+            "tube angle": 45
+        }
+    },
+
+    "Samples": [
+        {
+            "Label": "cube",
+            "Path": "thick_test.stl",
+            "Unit": "mm",
+            "Material": ["Compound", "C3H4O2"
+            ],
+            "Density": 1.24,
+            "Type" : "inner"
+        }
+    ]
+}

@@ -2,10 +2,10 @@
     "WindowSize": [500, 500],
 
     "Detector": {
-        "Position": [0.0, 0.0, 48.38921, "cm"],        
+        "Position": [0.0, 0.0, 10, "cm"],        
         "UpVector": [-1, 0, 0],
-        "NumberOfPixels": [3192, 2296],
-        "Size": [405.384, 291.592, "mm"],
+        "NumberOfPixels": [2000, 2000],
+        "Size": [300, 300, "mm"],
         "Energy response": {
             "File": "energyResponseDetector.txt",
             "Energy": "MeV"
@@ -13,7 +13,7 @@
     },
 
     "Source": {
-        "Position": [0.0, 0.0, -48.78439, "cm"],
+        "Position": [0.0, 0.0, -40.0, "cm"],
         "Shape": "PointSource",
         "Beam": {
             "kvp": 60,

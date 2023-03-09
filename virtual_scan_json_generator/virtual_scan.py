@@ -2,9 +2,8 @@
 
 # Import packages
 import os
-import numpy as np # Who does not use Numpy?
-
-
+import numpy as np
+import matplotlib.pyplot as plt
 from tifffile import imwrite # Write TIFF files
 
 from gvxrPython3 import gvxr # Simulate X-ray images
@@ -43,4 +42,5 @@ detector_response = np.loadtxt("energyResponseDetector.txt")
 
 x_ray_projections = np.array(gvxr.computeProjectionSet(0,0,0, "cm", number_of_projections, 
                                                  angular_step)).astype(np.single)
+plt.imshow(x_ray_projections[0])
 imwrite('3000_proj.tif', x_ray_projections) #Saves the projections as a stack o TIFF files

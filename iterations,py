@@ -172,6 +172,8 @@ for entry in file_list:
     
     print('gVXR simulation completed!')
     
+    gvxr.removePolygonMeshesFromSceneGraph()
+    
     data, reconstruction = reconstruct(current_path+"/notebook.json")
     writer = TIFFWriter(data=reconstruction, file_name=(current_path+'/reconstructions/'+'/'+entry+'/'+entry+'_recon'))
     writer.write()
